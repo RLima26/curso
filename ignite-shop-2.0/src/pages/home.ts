@@ -7,6 +7,18 @@ export const HomeContainer = styled('main', {
     maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
     marginLeft: 'auto',
     minHeight: 656,
+    marginBottom: '5rem'
+})
+
+export const SliderContainer = styled('div', {
+
+    display: 'flex',
+    gap: '3rem',
+    margin: '0 auto',
+
+    '.embla__slide': {
+        minWidth: '30rem'
+    }
 })
 
 export const Product = styled('div', {
@@ -19,6 +31,8 @@ export const Product = styled('div', {
     alignItems: 'center',
     justifyContent: 'center',
     overflow: "hidden",
+    width: '100%',
+    minHeight: 656,
     
     img: {
         objectFit: 'cover',
@@ -38,7 +52,12 @@ export const Product = styled('div', {
         transform: 'translateY(110%)',
         opacity: 0,
         transition: 'all 0.2s ease-in-out',
-        
+
+        div: {
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 4,
+        },        
         
         strong: {
             fontSize: '$lg',
